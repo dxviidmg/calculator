@@ -1,36 +1,36 @@
-.button-contenedor{
-    height: 83px;
-    display: flex;
-    flex: 1 1;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    background-color: #1b1b32;
-    color: white;
-    margin: 4px;
-    cursor: pointer;
-    user-select: None;
-    font-size: 40px;
-    border-radius: 10px;
-    border: 2px solid white;
+.button-contenedor {
+  height: 83px;
+  display: flex;
+  flex: 1 1;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-color: #1b1b32;
+  color: white;
+  margin: 4px;
+  cursor: pointer;
+  user-select: None;
+  font-size: 40px;
+  border-radius: 10px;
+  border: 2px solid white;
 }
 
-.button-contenedor:hover{
-    background-color: #5a01a7;
+.button-contenedor:hover {
+  background-color: #5a01a7;
 }
 
-.operador{
-    background-color: green;
+.operador {
+  background-color: green;
 }
 
-.operador:hover{
-    background-color: orange;
+.operador:hover {
+  background-color: orange;
 }
 
-.clear{
-    background-color: #ac0246;
+.clear {
+  background-color: #ac0246;
 }
 
-.clear:hover{
-    background-color: #ebb006;
+.clear:hover {
+  background-color: #ebb006;
 }

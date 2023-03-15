@@ -1,10 +1,7 @@
-import '../css/Display.css'
+import "../css/Display.css";
 
-const Display = ({value}) => {
-    return(
-        <div className="display">{value}</div>
-    )
+const Display = ({ value }) => {
+  return <div className="display">{value}</div>;
+};
 
-}
-
-export default Display
+export default Display;
