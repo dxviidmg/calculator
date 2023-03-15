@@ -2,7 +2,6 @@ import '../css/Button.css'
 
 
 export default function Button(props) {
-
   const esOperador = v => {
     return isNaN(v) && (!['.', '=', 'Clear'].includes(v))
   }
@@ -11,6 +10,6 @@ export default function Button(props) {
     return (v === 'Clear')
   }
 
-  return <div className={`button-contenedor ${esOperador(props.children) ? 'operador': ''} ${isToClear(props.children)  ? 'clear': ''}`.replace(/\s+/g, ' ').trim()}>{props.children}</div>;
+  return <div className={`button-contenedor ${esOperador(props.children) ? 'operador': ''} ${isToClear(props.children)  ? 'clear': ''}`.replace(/\s+/g, ' ').trim()} onClick={() => props.onClick(props.children)}>{props.children}</div>;
 }
 

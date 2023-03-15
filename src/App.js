@@ -1,10 +1,24 @@
 
+import { useState } from 'react';
 import './App.css';
 import Button from './components/Button';
 import Display from './components/Display';
 
 import freeCodeCampLogo from './images/freecodecamp-logo.png'
 function App() {
+  const [value, setValue] = useState('')
+
+  const clear = () => setValue('')
+
+  const add_number = n => {
+    setValue(value  + n)
+  }
+
+  const calculate = (n) => {
+    setValue(eval(value).toString().match(/.{1,15}/))
+  }
+
+  
   return (
     <div className="App">
       <div className='freecodecamp-logo-contenedor'>
@@ -12,35 +26,35 @@ function App() {
       </div>
       <div className='contenedor-calculadora'>
       <div className='fila'>
-        <Display value={0}></Display>
+        <Display value={value}></Display>
         </div>
         <div className='fila'>
-          <Button>7</Button>
-          <Button>8</Button>
-          <Button>9</Button>
-          <Button>/</Button>
+          <Button onClick={add_number}>7</Button>
+          <Button onClick={add_number}>8</Button>
+          <Button onClick={add_number}>9</Button>
+          <Button onClick={add_number}>/</Button>
         </div>
         <div className='fila'>
-        <Button>4</Button>
-          <Button>5</Button>
-          <Button>6</Button>
-          <Button>*</Button>
+        <Button onClick={add_number}>4</Button>
+          <Button onClick={add_number}>5</Button>
+          <Button onClick={add_number}>6</Button>
+          <Button onClick={add_number}>*</Button>
         </div>
         <div className='fila'>
-        <Button>1</Button>
-          <Button>2</Button>
-          <Button>3</Button>
-          <Button>-</Button>
+        <Button onClick={add_number}>1</Button>
+          <Button onClick={add_number}>2</Button>
+          <Button onClick={add_number}>3</Button>
+          <Button onClick={add_number}>-</Button>
         </div>
     
         <div className='fila'>
-          <Button>0</Button>
-          <Button>.</Button>
-          <Button>=</Button>
-          <Button>+</Button>
+          <Button onClick={add_number}>0</Button>
+          <Button onClick={add_number}>.</Button>
+          <Button onClick={calculate}>=</Button>
+          <Button onClick={add_number}>+</Button>
         </div>
         <div className='fila'>
-        <Button>Clear</Button>
+        <Button onClick={clear}>Clear</Button>
         </div>
       </div>
     </div>
