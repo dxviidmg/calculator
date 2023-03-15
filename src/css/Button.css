@@ -26,3 +26,11 @@
 .operador:hover{
     background-color: orange;
 }
+
+.clear{
+    background-color: #ac0246;
+}
+
+.clear:hover{
+    background-color: #ebb006;
+}
