@@ -1,0 +1,15 @@
+.display{
+    background-color: #1b1b32;
+    height: 50px;
+    display: flex;
+    flex: 1 1;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-size: 40px;
+    align-items: flex-end ;
+    justify-content: flex-end;
+    padding: 11px 30px 11px 11px;
+    margin-bottom: 10px;
+    color: white;
+
+}
